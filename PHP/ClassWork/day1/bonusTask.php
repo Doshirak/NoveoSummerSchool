@@ -3,7 +3,7 @@
 $month = date('F');
 $daysNumber = date('t');
 $currDay = 1;
-$currDayInWeek = date('w',strtotime("Sunday + $currDay Days")) + 1;
+$currDayInWeek = date('w',strtotime("Monday + $currDay Days"));
 
 // Month
 echo($month."\n");
