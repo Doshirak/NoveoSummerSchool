@@ -1,0 +1,22 @@
+#fotos
+{
+	background-color: #990000;
+}
+
+#fotos #header
+{
+
+}
+
+#fotos #grid
+{
+	overflow: auto;
+}
+
+#fotos .foto
+{
+	width: 33%;
+	float:left;
+	text-align:center; 
+}
+

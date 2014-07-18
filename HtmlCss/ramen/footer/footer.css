@@ -1,0 +1,16 @@
+#footer
+{
+	background-color: #CC3300;
+}
+
+#footer #row
+{
+	overflow: auto;
+}
+
+#footer .foto
+{
+	width: 25%;
+	float:left;
+	text-align:center;
+}

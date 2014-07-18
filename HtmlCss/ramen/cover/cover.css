@@ -1,0 +1,32 @@
+#cover
+{
+	background-color: #990000;
+	padding: 1% 1%;
+}
+
+#cover #mainImage
+{
+	overflow: auto;
+}
+
+#cover #mainImage #text
+{
+	float:left;
+}
+
+#cover #mainImage #label
+{
+	float:right;
+}
+
+#cover #images
+{
+	overflow: auto;
+}
+
+#cover .block
+{
+	width: 33%;
+	float:left;
+	text-align:center;
+}
