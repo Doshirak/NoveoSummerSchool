@@ -1,5 +1,46 @@
-div
+body
 {
 	max-width: 1280px;
 	margin: 0px auto;
+}
+
+.container
+{
+	padding: 1% 0% 1% 0%;
+}
+
+.element
+{
+	/*margin: 0% 0% 1% 0%;	*/
+}
+
+.colorA
+{
+	background-color: #C30;
+}
+
+.colorB
+{
+	background-color: #900;
+}
+
+.textColor
+{
+	background-color: #933;
+}
+
+.imageColor
+{
+	background-color: #FC0;
+}
+
+.text
+{
+	background-color: #933;
+}
+
+.image 
+{
+	background-color: #FC0;
+	height: 100px;
 }

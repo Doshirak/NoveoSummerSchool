@@ -1,15 +1,16 @@
 #article
 {
-	background-color: #CC3300;
 	overflow: auto;
 }
 
-#article #row #text
+#article .row .text
 {
+	width: 49%;
 	float: left;
 }
 
-#article #row #image
+#article .row .image
 {
+	width: 49%;
 	float: right;
 }
