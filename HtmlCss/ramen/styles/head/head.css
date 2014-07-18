@@ -1,7 +1,12 @@
 #Header
 {
 	background-color: #CC3300;
-	padding: 1% 1%;
+	padding-bottom: 1%;
+}
+
+#Header div
+{
+	margin: 1% 1% 0% 1%;
 }
 
 #Header #logo

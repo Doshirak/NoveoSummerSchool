@@ -1,0 +1,27 @@
+#article
+{
+	background-color: #CC3300;
+	overflow: auto;
+	padding-bottom: 1%;
+}
+
+#article div
+{
+	margin: 1% 1% 0% 1%;
+}
+
+#article #row #text
+{
+	width: 48%;
+	height: 100px;
+	background-color: #990000;
+	float: left;
+}
+
+#article #row #image
+{
+	width: 48%;
+	height: 100px;
+	background-color: #FFCC00;
+	float: right;
+}

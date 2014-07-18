@@ -1,0 +1,63 @@
+#cover
+{
+	background-color: #990000;
+	padding-top: 1%; 
+	padding-bottom: 1%;
+}
+
+#cover div
+{
+	margin: 1% 1% 0% 1%;
+}
+
+#cover #mainImage
+{
+	width: 98%;
+	height: 200px;
+	background-color: #FFCC00;
+	margin-top: 0%;
+	overflow: auto;
+
+}
+
+#cover #mainImage #text
+{
+	width: 30%;
+	height: 50%;
+	background-color: #990000;
+	float:left;
+}
+
+#cover #mainImage #label
+{
+	float:right;
+}
+
+#cover #images
+{
+	overflow: auto;
+}
+
+#cover #images div
+{
+	margin: 1px;
+	padding: 0%;
+}
+
+#cover .block
+{
+	width: 33%;
+	float:left;
+	text-align:center;
+}
+
+#cover .block .image
+{
+	background-color: #FFCC00;
+}
+
+#cover .block .text
+{
+	height: 100px;
+	background-color: #FFCC00;
+}

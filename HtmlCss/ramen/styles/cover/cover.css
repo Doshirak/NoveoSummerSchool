@@ -1,11 +1,18 @@
 #cover
 {
 	background-color: #990000;
-	padding: 1% 1%;
+	padding-top: 1%; 
+}
+
+#cover div
+{
+	margin: 1% 1% 0% 1%;
 }
 
 #cover #mainImage
 {
+	background-color: #FFCC00;
+	margin-top: 0%;
 	overflow: auto;
 }
 
@@ -22,6 +29,8 @@
 #cover #images
 {
 	overflow: auto;
+	margin: 0%;
+	padding: 0%;
 }
 
 #cover .block
