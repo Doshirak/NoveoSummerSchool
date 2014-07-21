@@ -5,7 +5,7 @@
 
 #cover #mainImage
 {
-	background-image: url("cover.jpg");
+	background-image: url("../../images/cover.jpg");
 	background-color: #FFFFFF;
 	overflow: auto;
 	height: 200px;
@@ -17,12 +17,15 @@
 	width: 30%;
 	height: auto;
 	margin-left: 2%;
+	margin-right: 30%;
 	float:left;
 }
 
 #cover #mainImage .label
 {
+	font-size: 300%;
 	margin-right: 2%;
+	margin-bottom: 2%;
 	float:right;
 }
 
@@ -46,5 +49,6 @@
 
 #cover #images .image
 {
-	height: 100px;
+	width: 100%;
+	height: auto;
 }
