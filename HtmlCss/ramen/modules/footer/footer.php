@@ -1,4 +1,4 @@
-<div id="footer" class="container colorB">
+<div id="footer" class="container colorA">
 	<div class="header" class="elemet">Header</div>
 	<div class="row">
 		<div class="foto">

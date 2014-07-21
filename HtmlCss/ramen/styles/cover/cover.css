@@ -1,10 +1,12 @@
 #cover
 {
-	padding-top: 0%;
+	padding: 0%;
 }
 
 #cover #mainImage
 {
+	background-image: url("cover.jpg");
+	background-color: #FFFFFF;
 	overflow: auto;
 	height: 200px;
 	margin-bottom: 1%;
@@ -12,11 +14,15 @@
 
 #cover #mainImage .text
 {
+	width: 30%;
+	height: auto;
+	margin-left: 2%;
 	float:left;
 }
 
 #cover #mainImage .label
 {
+	margin-right: 2%;
 	float:right;
 }
 

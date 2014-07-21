@@ -2,6 +2,7 @@ body
 {
 	max-width: 1280px;
 	margin: 0px auto;
+	font-family: 'Lobster', cursive;
 }
 
 .container
@@ -16,31 +17,43 @@ body
 
 .colorA
 {
-	background-color: #C30;
+	background-color: #FFF;
 }
 
 .colorB
 {
-	background-color: #900;
+	background-color: #CFF;
 }
 
 .textColor
 {
-	background-color: #933;
+	background-color: #CFC;
 }
 
 .imageColor
 {
-	background-color: #FC0;
+	background-color: #F99;
 }
 
 .text
 {
-	background-color: #933;
+	background-color: #CFC;
+	height: 80px;
 }
 
 .image 
 {
-	background-color: #FC0;
-	height: 100px;
+	background-color: #F99;
+	height: 80px;
+}
+
+.line
+{
+	background-color: #CFF;
+	height: 5px;
+}
+
+.header
+{
+	font: 120% sans-serif;  
 }
