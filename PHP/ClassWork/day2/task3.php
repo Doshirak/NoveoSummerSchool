@@ -21,7 +21,7 @@ class SingleStorage extends ExceptionStorage
 echo 'SingleStorage test...', PHP_EOL;
 
 // Create object
-$storage = SingleStorage::getInstance();
+$storage = SingleStorage::getInstance();	
 
 test($storage);
 

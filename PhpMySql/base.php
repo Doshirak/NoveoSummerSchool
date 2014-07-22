@@ -76,7 +76,6 @@ class UserRow implements iDbConnectable
 	    	$row->id = $this->table->lastInsertId(); 
 	    }    	
 	    return $this;
-
     }
 
     public function where($attribute, $value)
