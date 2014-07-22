@@ -7,17 +7,17 @@
 	</div>
 	<div id="images" class="element">
 		<div class="block">
-			<div class="image"><img src="images/cover_out-0.jpg"/></div>
+			<div class="image"><img src="images/cover_out-0.jpg" alt="Ramen foto"/></div>
 			<div class="header">Header</div>
 			<div class="text">text</div>
 		</div>
 		<div class="block">
-			<div class="image"><img src="images/cover_out-1.jpg"/></div>
+			<div class="image"><img src="images/cover_out-1.jpg" alt="Ramen foto"/></div>
 			<div class="header">Header</div>
 			<div class="text">text</div>
 		</div>
 		<div class="block">
-			<div class="image"><img src="images/cover_out-2.jpg"/></div>
+			<div class="image"><img src="images/cover_out-2.jpg" alt="Ramen foto"/></div>
 			<div class="header">Header</div>
 			<div class="text">text</div>
 		</div>

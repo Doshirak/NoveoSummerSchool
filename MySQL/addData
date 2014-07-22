@@ -1,0 +1,64 @@
+DELETE FROM users;
+DELETE FROM friends;
+DELETE FROM albums;
+DELETE FROM fotos;
+DELETE FROM fotoAlbum;
+
+INSERT INTO users
+VALUES (1, 'Maxim', 'Ten', 'DOSHIRAK', '123');
+INSERT INTO users
+VALUES (2, 'Vasya', 'Pupkin', 'VasPup', '123');
+
+INSERT INTO friends 
+VALUES (1, 2, FALSE);
+UPDATE friends
+SET accept=TRUE WHERE receiverId=2 AND senderId=1;
+
+INSERT INTO albums  
+VALUES (1, 'myAlbum', 1, TRUE);
+INSERT INTO albums  
+VALUES (2, 'myAlbum', 2, FALSE);
+INSERT INTO albums  
+VALUES (3, 'cats', 1, FALSE);
+INSERT INTO albums  
+VALUES (4, 'privateFotos', 2, FALSE);
+
+INSERT INTO fotos 
+VALUES (1, 'myFoto', 1, TRUE);
+INSERT INTO fotos  
+VALUES (2, 'myFoto', 2, FALSE);
+INSERT INTO fotos  
+VALUES (3, 'cat1', 1, FALSE);
+INSERT INTO fotos  
+VALUES (4, 'cat2', 2, FALSE);
+
+INSERT INTO fotoAlbum 
+VALUES (1, 1);
+INSERT INTO fotoAlbum 
+VALUES (2, 2);
+INSERT INTO fotoAlbum 
+VALUES (1, 4);
+INSERT INTO fotoAlbum 
+VALUES (2, 4);
+INSERT INTO fotoAlbum 
+VALUES (3, 3);
+INSERT INTO fotoAlbum 
+VALUES (4, 3);
+
+UPDATE users
+SET firstName='Petya' WHERE id=2;
+
+UPDATE albums
+SET name='publicFotos' WHERE id=4;
+
+UPDATE fotos
+SET privateFlag=TRUE WHERE id=2;
+
+SELECT * FROM 
+fotos JOIN fotoAlbum
+ON fotos.id=fotoAlbum.fotoId WHERE albumId=1;
+
+SELECT * FROM fotos
+WHERE id IN
+(SELECT fotoId FROM fotoAlbum JOIN albums
+ON fotoAlbum.albumId=albums.id WHERE ownerId=1);

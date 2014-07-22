@@ -1,7 +1,12 @@
 <div id="article" class="container colorA">
-	<div class="header" class="element">Header</div>
+	<div class="header element">Header</div>
 	<div class="row">
-		<div class="text" class="element imageColor">Text</div>
-		<div class="image" class="element textColor">Image</div>
+		<div class="text textColor">The origin of ramen is unclear. Some sources say it is of Chinese origin.[4][5] Other sources say it was invented in Japan in the early 20th century.[6][7][8] The name ramen is the Japanese pronunciation of the Chinese lamian (拉麺).[9]
+Until the 1950s, ramen was called shina soba (支那そば, literally "Chinese soba") but today chūka soba (中華そば, also meaning "Chinese soba") or just Ramen (ラーメン) are more common, as the word "支那" (shina, meaning "China") has acquired a pejorative connotation.[3]
+By 1900, restaurants serving Chinese cuisine from Canton and Shanghai offered a simple ramen dish of noodles (cut rather than hand pulled), a few toppings, and a broth flavored with salt and pork bones. Many Chinese living in Japan also pulled portable food stalls, selling ramen and gyōza dumplings to workers. By the mid 1900s, these stalls used a type of a musical horn called a charumera (チャルメラ, from the Portuguese charamela) to advertise their presence, a practice some vendors still retain via a loudspeaker and a looped recording. By the early Shōwa period, ramen had become a popular dish when eating out.
+After World War II, cheap flour imported from the U.S. swept the Japanese market. At the same time, millions of Japanese troops had returned from China and continental East Asia from their posts in the Second Sino-Japanese War. Many of these returnees had become familiar with Chinese cuisine and subsequently set up Chinese restaurants across Japan. Eating ramen, while popular, was still a special occasion that required going out.
+In 1958, instant noodles were invented by Momofuku Ando, the Taiwanese-Japanese founder and chairman of Nissin Foods, now run by his son Koki Ando. Named the greatest Japanese invention of the 20th century in a Japanese poll,[10] instant ramen allowed anyone to make this dish simply by adding boiling water.
+Beginning in the 1980s, ramen became a Japanese cultural icon and was studied around the world from many perspectives. At the same time, local varieties of ramen were hitting the national market and could even be ordered by their regional names. A ramen museum opened in Yokohama in 1994.[11]</div>
+		<div class="image imageColor"><img src="images/logo.jpg" alt="Ramen foto"/></div>
 	</div>
 </div>

@@ -10,48 +10,21 @@
 	</div>
 	<div class="menu header">
 		<ul id="menu">
-		    <li>
-		        <a href="#">Menu 1</a>
+		    <li><a href="#">Menu 1</a>
+		        <ul class="sub-menu">
+		            <li><a href="#">Sub Menu 1</a></li>
+		            <li><a href="#">Sub Menu 2</a></li>
+		            <li><a href="#">Sub Menu 3</a></li>
+		            <li><a href="#">Sub Menu 4</a></li>
+		        </ul>
 		    </li>
 		    <li><a href="#">Menu 2</a>
-
 		        <ul class="sub-menu">
-		            <li>
-		                <a href="#">Sub Menu 1</a>
-		            </li>
-		            <li>
-		                <a href="#">Sub Menu 2</a>
-		            </li>
-		            <li>
-		                <a href="#">Sub Menu 3</a>
-		            </li>
-		            <li>
-		                <a href="#">Sub Menu 4</a>
-		            </li>
+		            <li><a href="#">Sub Menu 1</a></li>
+		            <li><a href="#">Sub Menu 2</a></li>
+		            <li><a href="#">Sub Menu 3</a></li>
+		            <li><a href="#">Sub Menu 4</a></li>
 		        </ul>
-		    </li>
-		    <li><a href="#">Menu 3</a>
-
-		    </li>
-		    <li><a href="#">Menu 4</a>
-
-		        <ul class="sub-menu">
-		            <li>
-		                <a href="#">Sub Menu 1</a>
-		            </li>
-		            <li>
-		                <a href="#">Sub Menu 2</a>
-		            </li>
-		            <li>
-		                <a href="#">Sub Menu 3</a>
-		            </li>
-		            <li>
-		                <a href="#">Sub Menu 4</a>
-		            </li>
-		        </ul>
-		    </li>
-		    <li>
-		        <a href="#">Menu 5</a>
 		    </li>
 		</ul>
 	</div>
