@@ -1,6 +1,6 @@
-#footer
+#footer 
 {
-	background-color: #CC3300;
+	height: 200px;
 }
 
 #footer #row
@@ -10,7 +10,13 @@
 
 #footer .foto
 {
-	width: 25%;
+	width: 22%;
+	margin-right: 4%;
 	float:left;
 	text-align:center;
+}
+
+#footer .foto:last-child
+{
+	margin-right: 0%;
 }

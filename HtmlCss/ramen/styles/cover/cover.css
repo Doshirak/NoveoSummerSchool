@@ -1,41 +1,54 @@
 #cover
 {
-	background-color: #990000;
-	padding-top: 1%; 
-}
-
-#cover div
-{
-	margin: 1% 1% 0% 1%;
+	padding: 0%;
 }
 
 #cover #mainImage
 {
-	background-color: #FFCC00;
-	margin-top: 0%;
+	background-image: url("../../images/cover.jpg");
+	background-color: #FFFFFF;
 	overflow: auto;
+	height: 200px;
+	margin-bottom: 1%;
 }
 
-#cover #mainImage #text
+#cover #mainImage .text
 {
+	width: 30%;
+	height: auto;
+	margin-left: 2%;
+	margin-right: 30%;
 	float:left;
 }
 
-#cover #mainImage #label
+#cover #mainImage .label
 {
+	font-size: 300%;
+	margin-right: 2%;
+	margin-bottom: 2%;
 	float:right;
 }
 
 #cover #images
 {
 	overflow: auto;
-	margin: 0%;
-	padding: 0%;
 }
 
-#cover .block
+#cover #images .block
 {
-	width: 33%;
+	width: 30%;
+	margin-right: 5%;
 	float:left;
 	text-align:center;
+}
+
+#cover #images .block:last-child
+{
+	margin-right: 0%;
+}
+
+#cover #images .image
+{
+	width: 100%;
+	height: auto;
 }

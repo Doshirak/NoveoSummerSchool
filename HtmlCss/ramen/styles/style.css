@@ -1,5 +1,61 @@
-div
+body
 {
 	max-width: 1280px;
+	min-width: 1024px;
 	margin: 0px auto;
+	font-family: 'Lobster', cursive;
+}
+
+.container
+{
+	padding: 1% 0% 1% 0%;
+}
+
+.element
+{
+	/*margin: 0% 0% 1% 0%;	*/
+}
+
+.colorA
+{
+	background-color: #FFF;
+}
+
+.colorB
+{
+	background-color: #CFF;
+}
+
+.textColor
+{
+	background-color: #CFC;
+}
+
+.imageColor
+{
+	background-color: #F99;
+}
+
+.text
+{
+	background-color: #CFC;
+	height: 80px;
+}
+
+.image 
+{
+	background-color: #F99;
+	height: 80px;
+}
+
+.line
+{
+	background-color: #CFF;
+	height: 5px;
+}
+
+.header
+{
+	font: 120% DejaVu-sans; 
+	font-weight: bold; 
 }

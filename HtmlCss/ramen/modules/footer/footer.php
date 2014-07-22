@@ -1,6 +1,6 @@
-<div id="footer">
-	<div id="header">Header</div>
-	<div id="row">
+<div id="footer" class="container colorA">
+	<div class="header" class="elemet">Header</div>
+	<div class="row">
 		<div class="foto">
 			<div class="image">image</div>
 			<div class="text">text</div>
