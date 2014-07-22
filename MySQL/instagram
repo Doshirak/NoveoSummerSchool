@@ -1,0 +1,57 @@
+-- SETTINGS
+
+DROP DATABASE instagram;
+SET storage_engine=MYISAM;
+
+-- DATABASE
+
+CREATE DATABASE instagram;
+USE instagram;
+
+-- TABLES
+
+CREATE TABLE users
+(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	firstName VARCHAR(256),
+	lastName VARCHAR(256),
+	login VARCHAR(256) UNIQUE,
+	password VARCHAR(256)
+);
+
+CREATE TABLE albums
+(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(256),
+	ownerId INT,
+	privateFlag BOOL
+);
+
+CREATE TABLE fotos
+(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(256),
+	ownerId INT,
+	privateFlag BOOL
+);
+
+-- LINKS
+
+CREATE TABLE friends 
+(
+	senderId INT,
+	receiverId INT,
+	accept BOOL
+);
+
+CREATE TABLE fotoAlbum 
+(
+	fotoId INT, 
+	albumId INT
+);
+
+CREATE TABLE userAlbum
+(
+	userId INT,
+	albumId INT
+);
