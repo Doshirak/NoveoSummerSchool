@@ -66,6 +66,10 @@ class Template {
 		return $this->_primaryKey;
 	}
 
+	public function getTableName() {
+		return $this->_tableName;
+	}
+
 	public function getGetQuery() {
 		return $this->_get;
 	}

@@ -7,5 +7,6 @@ $database = $loader->getDB();
 $userTemplate = $loader->getTemplate('users');
 $userTable = new Table(array($database, $userTemplate));
 $userTable->findByPk(1);
-// $userTable->setParameter('password','456');
+$userTable->setParameter('password','123');
 $userTable->save();
+$userTable->where('password','123');

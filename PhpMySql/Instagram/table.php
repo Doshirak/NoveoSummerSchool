@@ -16,9 +16,6 @@ class Table implements iDbConnectable {
 		if (get_class($attributes[1]) != 'Template') {
 			throw new Exception('Wrong parameters');
 		}
-		// if (is_array($attributes[2]) == false) {
-		// 	throw new Exception('Wrong parameters');
-		// }
 
 		// Assign
 		$this->_database = $attributes[0];
@@ -28,7 +25,7 @@ class Table implements iDbConnectable {
 			if (is_array($attributes[2]) == true) {
 				$params = $attributes[1]->getParams();
 				foreach(array_keys($attributes[2]) as $key) {
-					if (array_search($key, $params) == FALSE) {
+					if (array_search($key, $params) === false) {
 						throw new Exception('Wrong parameters');		
 					}
 				}
@@ -117,8 +114,14 @@ class Table implements iDbConnectable {
 	}
 
 	public function where($attribute, $value) {
-
-		
+		$array = array();
+		$sql = 'SELECT * FROM '.$this->_template->getTableName().' WHERE '.$attribute.'='.$value;
+		$query = $this->_database->query($sql);
+		$result = $query->fetchAll(PDO::FETCH_ASSOC);
+	    foreach ($result as $row) {
+	        array_push($array, $this->__construct(array($this->_database, $this->_template, $row)));
+	    }
+	    return $array;
 	}
 
 	public function setParameter($parameter, $value) {
