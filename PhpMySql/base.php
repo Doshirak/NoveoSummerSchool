@@ -64,7 +64,7 @@ class UserRow implements iDbConnectable
 		    		':userId' => $this->row->id,
 		    		':login' => $this->row->login,
 		    		':password' => $this->row->password));
-	    	$array = $this->create->fetch();
+	    	$array = $this->update->fetch();
 	    	var_dump($array);
 	    }
 	    else

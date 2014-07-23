@@ -54,6 +54,7 @@ class Template {
 			}
 			$sql .= $params[$n - 1].'=:'.$params[$n - 1].' WHERE '.$this->_primaryKey.'=:'.$this->_primaryKey;
 		}
+		// var_dump($sql);
 		$this->_update = $database->prepare($sql);
 	}
 
@@ -67,5 +68,13 @@ class Template {
 
 	public function getGetQuery() {
 		return $this->_get;
+	}
+
+	public function getUpdateQuery() {
+		return $this->_update;
+	}
+
+	public function getInsertQuery() {
+		return $this->_insert;
 	}
 } 
