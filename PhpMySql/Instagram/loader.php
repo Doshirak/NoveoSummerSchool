@@ -45,7 +45,7 @@ class Loader {
 	    $result = $query->fetch(PDO::FETCH_ASSOC);
 	    $primaryKey = $result['Column_name'];
 
-	    $template = new Template($tableName, $primaryKey, $param);
+	    $template = new Template($this->_database, $tableName, $primaryKey, $param);
 	    $this->_templates[$tableName] = $template;
 	}
 
