@@ -2,41 +2,40 @@
 
 class Purchase extends CFormModel
 {
-    public $username;
     public $itemId;
 
     public function rules()
     {
         return array(
-            array('username, itemId', 'required'),
+            array('itemId', 'required'),
         );
     }
 
     public function save($id) {
 
-        $key = 'array'.$this->username;
-        $array = Yii::app()->session->get($key);
-        if (!isset($array)) {
+        $key = 'itemList';
+        $itemList = Yii::app()->session->get($key);
+        if (!isset($itemList)) {
             Yii::app()->session->add($key, array());
-            $array = Yii::app()->session->get($key);
+            $itemList = Yii::app()->session->get($key);
         }
 
-        array_push($array, $id);
+        array_push($itemList, $id);
 
-        Yii::app()->session->add($key, $array);
+        Yii::app()->session->add($key, $itemList);
     }
 
     public function load() {
 
-        $key = 'array'.$this->username;
-        $array = Yii::app()->session->get($key);
-        if (!isset($array)) {
+        $key = 'itemList';
+        $itemList = Yii::app()->session->get($key);
+        if (!isset($itemList)) {
             return null;
         }
 
         $result = array();
         $items = new Item();
-        foreach($array as $id) {
+        foreach($itemList as $id) {
             $item = $items->findByPk($id);
             array_push($result, $item);
         }

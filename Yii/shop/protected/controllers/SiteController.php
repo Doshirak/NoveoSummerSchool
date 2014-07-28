@@ -106,28 +106,4 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
-
-    public function actionBuy() {
-        $model = new Purchase();
-        $item = new Item();
-        $array = $item->findAll();
-
-        $post = Yii::app()->request->getPost('Purchase');
-        if (isset($post)) {
-            $model->attributes = $post;
-            if($model->validate()) {
-                $model->save($model->itemId);
-            }
-        }
-
-        $this->render('shop', array('model'=>$model, 'array'=>$array));
-    }
-
-    public function actionCart() {
-        $model = new Purchase();
-        $model->username = Yii::app()->user->getName();
-        $array = $model->load();
-//        var_dump($array);
-        $this->render('cart', array('model'=>$model, 'array'=>$array));
-    }
 }

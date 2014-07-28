@@ -51,7 +51,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=shop',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => 'combine6573',
+			'password' => '123456',
 			'charset' => 'utf8',
 		),
 		'errorHandler'=>array(
