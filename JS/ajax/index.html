@@ -6,9 +6,9 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <form name="input" action="index.html" method="post" onsubmit="return ajax()">
+        <form name="input" method="post" onsubmit="return ajax()">
             Фамилия
-            <input type="text" name="lastName" value="Cергеев">
+            <input type="text" name="lastName" value="Иванов">
             Имя
             <input type="text" name="firstName" value="Сергей">
             Отчество
@@ -19,10 +19,10 @@
             <input type="radio" name="sex" value="female">
             Город
             <select name="city">
-                <option value="novosibirsk">Новосибирск</option>
-                <option value="ekb">Екатеринбург</option>
-                <option value="anapa">Анапа</option>
-                <option value="vladivostok">Владивосток</option>
+                <option value="Новосибирск">Новосибирск</option>
+                <option value="Екатеринбург">Екатеринбург</option>
+                <option value="Анапа">Анапа</option>
+                <option value="Владивосток">Владивосток</option>
             </select>
             Имя пользователя
             <input type="text" name="username" value="username">
@@ -32,7 +32,6 @@
             <input type="password" name="repeatedPassword" value="Password123">
             О себе
             <textarea rows="10" cols="30" name="textArea">
-                Инженер, люблю кошек
             </textarea>
             Дата рождения
             <select id="day">
