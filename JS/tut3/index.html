@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Test page</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <form name="input" action="index.html" method="post" onsubmit="return validate()">
+            Фамилия
+            <input type="text" name="lastName">
+            Имя
+            <input type="text" name="firstName">
+            Отчество
+            <input type="text" name="patronymic">
+            Муж
+            <input type="radio" name="sex" value="male">
+            Жен
+            <input type="radio" name="sex" value="female">
+            Город
+            <select name="cars">
+                <option value="volvo">Новосибирск</option>
+                <option value="saab">Анапа</option>
+                <option value="fiat">Владивосток</option>
+                <option value="audi">Екатеринбург</option>
+            </select>
+            Имя пользователя
+            <input type="text" name="username">
+            Пароль
+            <input type="password" name="password">
+            Повторить пароль
+            <input type="password" name="repeatedPassword">
+            О себе
+            <textarea rows="10" cols="30" name="textArea">
+            </textarea>
+            Дата рождения
+            <select id="day">
+            </select>
+            <select id="month">
+            </select>
+            <select id="year">
+            </select>
+            Отправить
+            <input id="submit" type="submit" value="Отправить">
+        </form>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    </body>
+</html>

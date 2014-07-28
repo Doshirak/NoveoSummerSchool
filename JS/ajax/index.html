@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Test page</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <form name="input" action="index.html" method="post" onsubmit="return ajax()">
+            Фамилия
+            <input type="text" name="lastName" value="Cергеев">
+            Имя
+            <input type="text" name="firstName" value="Сергей">
+            Отчество
+            <input type="text" name="patronymic" value="Сергеевич">
+            Муж
+            <input type="radio" name="sex" value="male">
+            Жен
+            <input type="radio" name="sex" value="female">
+            Город
+            <select name="city">
+                <option value="novosibirsk">Новосибирск</option>
+                <option value="ekb">Екатеринбург</option>
+                <option value="anapa">Анапа</option>
+                <option value="vladivostok">Владивосток</option>
+            </select>
+            Имя пользователя
+            <input type="text" name="username" value="username">
+            Пароль
+            <input type="password" name="password" value="Password123">
+            Повторить пароль
+            <input type="password" name="repeatedPassword" value="Password123">
+            О себе
+            <textarea rows="10" cols="30" name="textArea">
+                Инженер, люблю кошек
+            </textarea>
+            Дата рождения
+            <select id="day">
+            </select>
+            <select id="month">
+            </select>
+            <select id="year">
+            </select>
+            Отправить
+            <input id="submit" type="submit" value="Отправить">
+        </form>
+        <div id="myDiv"></div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    </body>
+</html>
