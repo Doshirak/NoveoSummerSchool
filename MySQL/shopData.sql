@@ -1,4 +1,4 @@
-INSERT INTO Users VALUES 
+INSERT INTO User VALUES 
 (
 	1,
 	'fname',
@@ -8,13 +8,13 @@ INSERT INTO Users VALUES
 	'mail@mail.com'
 );
 
-INSERT INTO Categories VALUES
+INSERT INTO Category VALUES
 (
 	1,
 	'Sweet'
 );
 
-INSERT INTO Items VALUES
+INSERT INTO Item VALUES
 (
 	1,
 	'Cake',
