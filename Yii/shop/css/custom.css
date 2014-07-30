@@ -1,0 +1,9 @@
+.edit .row {
+    visibility: hidden;
+    height: 0;
+}
+
+.edit:hover .row{
+    visibility: visible;
+    height: auto;
+}

@@ -7,6 +7,7 @@
  */
 class ItemForm extends CFormModel
 {
+    public $id;
     public $name;
     public $price;
 
@@ -18,7 +19,15 @@ class ItemForm extends CFormModel
     public function rules()
     {
         return array(
-            array('name, price', 'required'),
+            array('id, name, price', 'required'),
         );
+    }
+
+    public function save() {
+        $item = new Item();
+        $item = $item->findByPk($this->id);
+        $item->name = $this->name;
+        $item->price = $this->price;
+        $item->save();
     }
 }

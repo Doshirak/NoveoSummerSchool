@@ -9,7 +9,6 @@ class CartController extends Controller
         );
     }
 
-
     public function accessRules()
     {
         return array(

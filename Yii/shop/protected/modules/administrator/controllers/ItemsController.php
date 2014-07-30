@@ -19,7 +19,7 @@ class ItemsController extends Controller
         return array(
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
                 'actions'=>array('manage'),
-                'users'=>array('administrator'),
+                'users'=>array('admin'),
             ),
             array('deny',  // deny all users
                 'users'=>array('*'),
@@ -30,9 +30,20 @@ class ItemsController extends Controller
     public function actionManage() {
         $item = new Item();
         $itemList = $item->findAll();
+
+        $form = new ItemForm();
+
         $category = new Category();
         $categoryList =  $category->findAll();
 
-        $this->render('manage', array('itemList'=>$itemList, 'categoryList'=>$categoryList));
+        $post = Yii::app()->request->getPost('ItemForm');
+        if (isset($post)) {
+            $form->attributes = $post;
+            if($form->validate()) {
+                $form->save();
+            }
+        }
+
+        $this->render('manage', array('itemList'=>$itemList, 'form'=>$form, 'categoryList'=>$categoryList));
     }
 }
