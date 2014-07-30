@@ -12,6 +12,7 @@ $this->breadcrumbs = array(
     <h1>Shop</h1>
 
 <?php
+
 if (isset($itemList)) {
     foreach ($itemList as $item) {
         echo '<b>' . CHtml::label($item->name, false) . '</b><br>';

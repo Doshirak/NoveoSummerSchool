@@ -16,24 +16,23 @@ class UserIdentity extends CUserIdentity
 	 * against some persistent user identity storage (e.g. database).
 	 * @return boolean whether authentication succeeds.
 	 */
-    public function authenticate()
-    {
-        $user = User::model()->findByAttributes(array('username'=>$this->username));
+    public function authenticate() {
+        // Производим стандартную аутентификацию, описанную в руководстве.
+        $user = User::model()->find('LOWER(username)=?', array(strtolower($this->username)));
+        if(($user===null) || ($this->password!==$user->password)) {
+            $this->errorCode = self::ERROR_USERNAME_INVALID;
+        } else {
+            // В качестве идентификатора будем использовать id, а не username,
+            // как это определено по умолчанию. Обязательно нужно переопределить
+            // метод getId(см. ниже).
+            $this->_id = $user->id;
 
-//        var_dump(CPasswordHelper::verifyPassword($this->password,$user->password));
-//        var_dump($user);
+            // Далее логин нам не понадобится, зато имя может пригодится
+            // в самом приложении. Используется как Yii::app()->user->name.
+            // realName есть в нашей модели. У вас это может быть name, firstName
+            // или что-либо ещё.
 
-        if(!isset($user)) {
-            $this->errorCode=self::ERROR_USERNAME_INVALID;
-        }
-//        elseif(CPasswordHelper::verifyPassword($this->password,$user->password) === false) {
-//            $this->errorCode=self::ERROR_PASSWORD_INVALID;
-//        }
-        elseif($this->password != $user->password) {
-            $this->errorCode=self::ERROR_PASSWORD_INVALID;
-        }
-        else {
-            $this->errorCode=self::ERROR_NONE;
+            $this->errorCode = self::ERROR_NONE;
         }
         return !$this->errorCode;
     }

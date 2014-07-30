@@ -5,7 +5,21 @@ INSERT INTO User VALUES
 	'lname',
 	'password',
 	'username',
-	'mail@mail.com'
+	'mail@mail.com',
+	'user',
+	'active'
+);
+
+INSERT INTO User VALUES 
+(
+	2,
+	'fname',
+	'lname',
+	'admin',
+	'admin',
+	'mail@mail.com',
+	'user',
+	'active'
 );
 
 INSERT INTO Category VALUES
